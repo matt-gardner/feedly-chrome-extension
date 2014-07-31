@@ -1,0 +1,29 @@
+{
+  "name": "Feedly Filter",
+  "description": "A helper extension for going through Feedly",
+  "version": "0.1",
+  "permissions": [
+    "declarativeContent",
+    "activeTab"
+  ],
+  "commands": {
+    "filter": {
+      "suggested_key": {
+        "default": "Alt+F"
+      },
+      "description": "Run filtering"
+    }
+  },
+  "page_action": {
+    "default_title": "Feedly Filter",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "jquery-1.9.1.min.js",
+      "background.js"
+    ]
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}
